@@ -8,17 +8,20 @@ class BritishRoyalFamily {
 
 
   childOf() {
-    console.log(`Mother : ${this.mother}, Father : ${this.father}`)
+    // return `Mother : ${this.mother}, Father : ${this.father}`
+    return this.parents
   }
 
 }
 
-let newGenerationOne = new BritishRoyalFamily('Prince George', 'Catherine', 'Prince William');
+let newGenerationOne = new BritishRoyalFamily('Prince George',
+  'Catherine', 'Prince William');
 
 let newGenerationTwo = new BritishRoyalFamily('Prince Harry', 'Diana', 'Charles');
 
 let newGenerationThree = new BritishRoyalFamily('Prince Andrew', 'Prince Phillip', 'Queen Elizabeth II');
 
-// console.log(newGenerationOne.childOf())
+console.log(newGenerationOne.childOf())
+console.log(newGenerationOne.parents)
 // console.log(newGenerationTwo.childOf())
 // console.log(newGenerationThree.childOf())
